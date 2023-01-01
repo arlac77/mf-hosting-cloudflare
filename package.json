@@ -14,7 +14,6 @@
   },
   "homepage": "https://github.com/arlac77/mf-hosting-cloudflare#readme",
   "pkgbuild": {
-    "abstract": true,
     "requires": {
       "environment": {
         "has": "CF_PAGE"
@@ -23,7 +22,7 @@
     "html.base.href": "",
     "http.path": "",
     "install.dir": "/",
-    "variant": "mf-cloudflare"
+    "variant": "mf.cloudflare.pages"
   },
   "template": {
     "inheritFrom": [
