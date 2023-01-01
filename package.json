@@ -14,19 +14,15 @@
   },
   "homepage": "https://github.com/arlac77/mf-hosting-cloudflare#readme",
   "pkgbuild": {
-    "output": {},
     "abstract": true,
-    "activate": {
+    "requires": {
       "environment": {
         "has": "CF_PAGE"
       }
     },
-    "html.base.href": "<base href=\"{{http.path}}/\"/>",
-    "http.api": "${http.origin}${http.api.path}",
-    "http.api.path": "${http.path}/api",
+    "html.base.href": "",
     "http.path": "",
     "install.dir": "/",
-    "socket.http": "${run.dir}http/socket",
     "variant": "mf-cloudflare"
   },
   "template": {
