@@ -14,13 +14,13 @@
   },
   "homepage": "https://github.com/arlac77/mf-hosting-cloudflare#readme",
   "pkgbuild": {
+    "output": {},
+    "abstract": true,
     "activate": {
       "environment": {
         "has": "CF_PAGE"
       }
     },
-    "output": {},
-    "abstract": true,
     "html.base.href": "<base href=\"{{http.path}}/\"/>",
     "http.api": "${http.origin}${http.api.path}",
     "http.api.path": "${http.path}/api",
