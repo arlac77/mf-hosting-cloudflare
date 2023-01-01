@@ -1,0 +1,27 @@
+{
+  "name": "mf-hosting-cloudflare",
+  "version": "0.0.0-semantic-release",
+  "description": "hosting definitions for cloudflare @MF",
+  "devDependencies": {
+    "semantic-release": "^19.0.5"
+  },
+  "homepage": "https://github.com/arlac77/mf-hosting#readme",
+  "pkgbuild": {
+    "output": {
+    },
+    "abstract": true,
+    "html.base.href": "<base href=\"{{http.path}}/\"/>",
+    "http.path": "",
+    "http.api.path": "${http.path}/api",
+    "http.api": "${http.origin}${http.api.path}",
+    "install.dir": "/",
+    "socket.http": "${run.dir}http/socket",
+    "variant": "mf-cloudflare"
+  },
+  "template": {
+    "inheritFrom": [
+      "arlac77/template-npm",
+      "arlac77/template-semantic-release"
+    ]
+  }
+}
