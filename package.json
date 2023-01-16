@@ -18,6 +18,9 @@
     "http.path": "",
     "install.dir": "/",
     "requires": {
+      "properties": {
+      	"frontend": true
+      },
       "environment": {
         "has": "CF_PAGE"
       }
