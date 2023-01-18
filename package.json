@@ -14,8 +14,8 @@
   },
   "homepage": "https://github.com/arlac77/mf-hosting-cloudflare#readme",
   "pkgbuild": {
-    "html.base.href": "",
-    "http.path": "",
+    "html.base.href": "/",
+    "http.path": "/",
     "install.dir": "/",
     "requires": {
       "properties": {
