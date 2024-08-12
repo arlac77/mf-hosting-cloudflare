@@ -27,7 +27,8 @@ jobs:
           node-version: 20.15.0
           cache: 'npm'
       - run: npm ci
-      - run: npx semantic-release
+      - name: release
+        run: npx semantic-release
         env:
           CI: 'true'
           NPM_TOKEN: '${{ secrets.NPM_TOKEN }}'
