@@ -26,8 +26,6 @@ jobs:
         uses: actions/setup-node@v6.1.0
         with:
           node-version: ${{ matrix.node-version }}
-          cache: npm
-          cache-dependency-path: package-lock.json
       - name: install
         run: npm ci
       - name: test and coverage
@@ -48,13 +46,10 @@ jobs:
         uses: actions/setup-node@v6.1.0
         with:
           node-version: 24.11.1
-          cache: npm
-          cache-dependency-path: package-lock.json
       - name: install
         run: npm ci
       - name: release
         run: npx semantic-release
         env:
           CI: "true"
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
